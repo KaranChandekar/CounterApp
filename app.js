@@ -10,16 +10,19 @@ updateDisplay();
 increase.addEventListener("click",()=>{
     count++;
     updateDisplay();
+    value.style.color = "green";
 }) ;
 
 decrease.addEventListener("click",()=>{
     count--;
     updateDisplay();
+    value.style.color = "red";
 });
 
 reset.addEventListener("click",()=>{
     count = 0;
     updateDisplay();
+    value.style.color = "hsl(209, 61%, 16%)"
 })
 
 function updateDisplay(){
