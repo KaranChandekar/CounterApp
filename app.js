@@ -10,13 +10,17 @@ updateDisplay();
 increase.addEventListener("click",()=>{
     count++;
     updateDisplay();
-    value.style.color = "green";
+    if (count > 0) {
+        value.style.color = "green";
+    }
 }) ;
 
 decrease.addEventListener("click",()=>{
     count--;
     updateDisplay();
-    value.style.color = "red";
+    if (count < 0) {
+        value.style.color = "red";
+    }
 });
 
 reset.addEventListener("click",()=>{
